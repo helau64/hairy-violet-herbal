@@ -1,5 +1,7 @@
 a {
     @apply underline;
+    @apply decoration-2;
+    @apply underline-offset-2;
 
     &:hover, &:focus, &:active {
         @apply no-underline;
