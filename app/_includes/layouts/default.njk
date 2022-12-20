@@ -18,7 +18,9 @@
     {% include "partials/navigation.njk" %}
 
     <main class="content">
-      {{ content | safe }}
+      <div class="contained-width">
+        {{ content | safe }}
+      </div>
     </main>
 
     {% include "partials/footer.njk" %}

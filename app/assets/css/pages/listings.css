@@ -1,0 +1,13 @@
+.listings__header {
+    @apply mt-8 mb-12;
+}
+
+.listings__subtitle {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply mb-4;
+}
+
+.listings__items {
+    @apply mt-4 mb-8;
+}

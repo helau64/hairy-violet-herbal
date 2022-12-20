@@ -1,0 +1,21 @@
+.card {
+    span {
+        @apply text-sm;
+    }
+
+    a {
+        @apply no-underline;
+
+        &:hover, &:focus, &:active {
+            .card__title {
+                @apply underline;
+                @apply decoration-2;
+                @apply underline-offset-2;
+            }
+        }
+    }
+}
+
+.card__title {
+    @apply text-lg;
+}

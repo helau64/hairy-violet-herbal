@@ -3,27 +3,22 @@ title: Blog
 layout: "layouts/default.njk"
 permalink: "blog/"
 ---
-
-<div>
-
+<header class="listings__header">
     <h1>{{title}}</h1>
-
     {{ content | safe }}
+</header>
 
-    {% set postslist = collections.blog %}
+{% set postslist = collections.blog %}
 
+<article>
     <ul>
         {% for post in postslist | reverse %}
-            <li>
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
+            <li class="listings__item card">
+                <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
+                    <span>{{ post.data.date|readableDate }}</span>
+                    <h2 class="card__title">{{ post.data.title }}</h2>
                 </a>
             </li>
         {% endfor %}
     </ul>
-
-</div>
+</article>

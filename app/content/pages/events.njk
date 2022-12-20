@@ -4,42 +4,36 @@ layout: "layouts/default.njk"
 permalink: "events/"
 ---
 
-<div>
 
+<header class="listings__header">
     <h1>{{title}}</h1>
-
     {{ content | safe }}
+</header>
 
-    {% set postslist = collections.events %}
+{% set postslist = collections.events %}
 
-    <h2>Upcoming Events</h2>
-    <ul class="events-list--upcoming">
-        {% for post in postslist | reverse %}
-            <li data-date="{{post.data.date}}" class="events-list__item--upcoming">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+<h2 class="listings__subtitle">Upcoming Events</h2>
+<ul class="events-list--upcoming listings__items">
+    {% for post in postslist | reverse %}
+        <li data-date="{{post.data.date}}" class="events-list__item--upcoming listings__item card">
+            <a href="{{ post.url | url }}">
+                <span>{{ post.data.date|readableDate }}</span>
+                <h3 class="card__title">{{ post.data.title }}</h3>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
 
-    <h2>Previous Events</h2>
-    <ul class="events-list--previous">
-        {% for post in postslist | reverse %}
-            <li data-date="{{post.data.date}}" class="events-list__item--previous">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+<h2 class="listings__subtitle">Previous Events</h2>
+<ul class="events-list--previous listings__items">
+    {% for post in postslist | reverse %}
+        <li data-date="{{post.data.date}}" class="events-list__item--previous listings__item card">
+            <a href="{{ post.url | url }}">
+                <span>{{ post.data.date|readableDate }}</span>
+                <h3 class="card__title">{{ post.data.title }}</h3>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
 
 </div>

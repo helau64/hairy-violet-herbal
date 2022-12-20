@@ -1,6 +1,6 @@
 .navigation__content {
     @apply flex justify-between items-center;
-    @apply contained-width;
+    @apply w-contained;
     @apply w-full;
 
     height: $nav-height;
