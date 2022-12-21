@@ -4,7 +4,7 @@ description: Capitalize on low hanging fruit to identify a ballpark value added
   activity to beta test. Override the digital divide with additional
   clickthroughs from DevOps.
 author: Surjith S M
-date: 2020-09-01
+date: 2022-12-20T15:40:01.459Z
 thumbnail: /images/img_3e4210cfabe5-1.jpeg
 tags:
   - left
@@ -55,7 +55,3 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 > Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
 >
 > > Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
-## Inline code
-
-This web site is using `markedjs/marked`.
