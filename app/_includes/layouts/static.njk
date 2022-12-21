@@ -1,12 +1,39 @@
 ---
 layout: "layouts/default.njk"
 ---
-<div class="content__content max-text-width">
-    <header class="listings__header">
+<div class="static__content max-text-width">
+    <header class="static__header">
         <h1>{{title}}</h1>
     </header>
 
     <article class="prose prose-stone">
         {{ content | safe }}
     </article>
+
+    {% if path == "home" %}
+        <div class="static__latest">
+            <h2 class="static__subtitle">Latest</h2>
+            {% set postslist = collections.blog | head(-3) %}
+
+            <ul class="listings__items grid--3-col">
+                {% for post in postslist | reverse %}
+                    <li class="listings__item card">
+                        <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
+                            <div class="card__image-wrapper">
+                                {% if post.data.thumbnail %}
+                                    <img src="/static{{post.data.thumbnail}}" alt="">
+                                {% else %}
+                                    <img src="/static{{settings.thumbnail}}" alt="">
+                                {% endif %}
+                            </div>
+                            <div class="card__text">
+                                <span>{{ post.data.date|readableDate }}</span>
+                                <h3 class="card__title">{{ post.data.title }}</h3>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
 </div>

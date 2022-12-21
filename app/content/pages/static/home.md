@@ -2,6 +2,7 @@
 title: Hairy Violet Herbal
 permalink: /
 layout: layouts/static.njk
+path: "home"
 ---
 ## About me
 
