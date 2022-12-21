@@ -2,6 +2,9 @@
 title: Previous Event
 start: 2022-12-01T13:00:14.004Z
 finish: 2022-12-01T16:00:14.010Z
+link:
+  url: www.google.co.uk
+  text: Link text
 tags:
   - left
   - center
