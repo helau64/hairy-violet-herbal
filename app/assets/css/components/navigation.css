@@ -6,6 +6,10 @@
     height: $nav-height;
 }
 
+.navigation__logo img {
+    @apply h-16;
+}
+
 @include max-width(lg) {
     .navigation {
         @apply relative;

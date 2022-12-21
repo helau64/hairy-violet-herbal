@@ -3,3 +3,12 @@
     @apply text-center;
     @apply py-8;
 }
+
+.footer__social-items {
+    @apply flex justify-center;
+    @apply mb-2;
+}
+
+.footer__copyright {
+    @apply text-sm;
+}

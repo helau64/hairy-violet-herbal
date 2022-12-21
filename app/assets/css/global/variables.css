@@ -1,6 +1,6 @@
 $max-width: rem(1240px);
 $max-text-width: rem(700px);
-$nav-height: rem(60px);
+$nav-height: rem(90px);
 
 $breakpoints: (
 	xxs: 350px,

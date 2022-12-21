@@ -19,7 +19,7 @@ permalink: "blog/"
                         {% if post.data.thumbnail %}
                             <img src="/static{{post.data.thumbnail}}" alt="">
                         {% else %}
-                            <img src="/static/images/default_thumbnail.jpg" alt="">
+                            <img src="/static{{settings.thumbnail}}" alt="">
                         {% endif %}
                     </div>
                     <div class="card__text">

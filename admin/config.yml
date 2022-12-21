@@ -73,10 +73,19 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Meta Settings"
+      - label: "Site Settings"
         name: "settings"
         file: "app/_data/settings.yaml"
         fields:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+          - { label: Logo, name: logo, widget: image}
+          - { label: Default Thumbnail, name: thumbnail, widget: image}
+          - label: "Social Media"
+            name: "socials"
+            widget: "object"
+            collapsed: true
+            required: false
+            fields:
+              - {label: "Instagram", name: "instagram", widget: "string"}
