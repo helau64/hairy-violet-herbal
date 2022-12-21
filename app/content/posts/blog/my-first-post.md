@@ -1,7 +1,6 @@
 ---
 title: This is my first post
 description: And this is its blurb!
-author: Surjith S M
 date: 2022-12-20T15:40:01.459Z
 thumbnail: static/images/t-full.jpg
 tags:

@@ -1,7 +1,4 @@
 {
     "layout": "layouts/eventpost.njk",
-    "permalink": "events/{{title | slugify}}/",
-    "tags": [
-        "events"
-    ]
+    "permalink": "events/{{title | slugify}}/"
 }

@@ -1,7 +1,5 @@
 {
     "layout": "layouts/blogpost.njk",
     "permalink": "blog/{{title | slug}}/",
-    "tags": [
-        "blog"
-    ]
+    "date": "Created"
 }
