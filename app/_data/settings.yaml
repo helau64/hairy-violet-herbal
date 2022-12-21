@@ -2,6 +2,6 @@ name: Hairy Violet Herbal
 author: Heather Davidson
 url: https://hairy-violet-herbal.netlify.app
 logo: /images/t.png
-thumbnail: /images/default_thumbnail.jpg
+thumbnail: /static/images/default_thumbnail.jpg
 socials:
   instagram: https://www.instagram.com/hairyvioletherbal/
