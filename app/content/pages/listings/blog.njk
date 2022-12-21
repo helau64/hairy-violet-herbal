@@ -17,13 +17,13 @@ permalink: "blog/"
                 <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
                     <div class="card__image-wrapper">
                         {% if post.data.thumbnail %}
-                            <img src="{post.data.thumbnail}}" alt="">
+                            <img src="{{post.data.thumbnail}}" alt="">
                         {% else %}
                             <img src="/static/{{settings.thumbnail}}" alt="">
                         {% endif %}
                     </div>
                     <div class="card__text">
-                        <span>{{ post.data.date|readableDate }}</span>
+                        <span>{{ post.date|readableDate }}</span>
                         <h2 class="card__title">{{ post.data.title }}</h2>
                     </div>
                 </a>
