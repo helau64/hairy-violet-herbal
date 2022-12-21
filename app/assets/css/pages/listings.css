@@ -11,3 +11,15 @@
 .listings__items {
     @apply mt-4 mb-8;
 }
+
+@include max-width(sm) {
+    .listings__header {
+        @apply mt-4 mb-6;
+    }
+}
+
+@include between-widths(xxs, sm) {
+    .listings__items {
+        @apply grid-cols-2;
+    }
+}

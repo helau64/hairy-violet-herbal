@@ -2,11 +2,9 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: main
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
-media_folder: "app/assets/images"
-public_folder: "/static/images"
+
+media_folder: "static/images"
+public_folder: "/images"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
@@ -24,7 +22,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: "false"}
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
       - widget: select
         label: "tags"
         name: "tags"
@@ -43,7 +41,7 @@ collections:
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Event Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: "false"}
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
       - widget: select
         label: "tags"
         name: "tags"

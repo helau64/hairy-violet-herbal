@@ -1,10 +1,20 @@
 .card {
+    @apply h-full;
+
     span {
         @apply text-sm;
     }
 
+    img {
+        @apply transition-transform duration-150;
+        @apply h-40 w-full;
+        @apply object-cover;
+    }
+
     a {
         @apply no-underline;
+        @apply h-full;
+        @apply flex flex-col;
 
         &:hover, &:focus, &:active {
             .card__title {
@@ -12,10 +22,26 @@
                 @apply decoration-2;
                 @apply underline-offset-2;
             }
+
+            img {
+                @apply scale-110;
+            }
         }
     }
 }
 
 .card__title {
     @apply text-lg;
+}
+
+.card__image-wrapper {
+    @apply overflow-hidden;
+}
+
+@include min-width(lg) {
+    .card {
+        img {
+            @apply h-60;
+        }
+    }
 }

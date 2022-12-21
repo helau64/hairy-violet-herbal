@@ -8,3 +8,9 @@ body {
 h1 {
     @apply text-6xl;
 }
+
+@include max-width(sm) {
+    h1 {
+        @apply text-4xl;
+    }
+}

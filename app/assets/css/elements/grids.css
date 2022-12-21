@@ -2,6 +2,12 @@
     .grid--#{$i}-col {
         @apply grid;
         @apply grid-cols-#{$i};
-        @apply gap-8;
+        @apply gap-6;
+    }
+
+    @include max-width(sm) {
+        .grid--#{$i}-col {
+            @apply grid-cols-1;
+        }
     }
 }

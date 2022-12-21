@@ -11,12 +11,21 @@ permalink: "blog/"
 {% set postslist = collections.blog %}
 
 <article>
-    <ul>
+    <ul class="listings__items grid--3-col">
         {% for post in postslist | reverse %}
             <li class="listings__item card">
                 <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
-                    <span>{{ post.data.date|readableDate }}</span>
-                    <h2 class="card__title">{{ post.data.title }}</h2>
+                    <div class="card__image-wrapper">
+                        {% if post.data.thumbnail %}
+                            <img src="/static{{post.data.thumbnail}}" alt="">
+                        {% else %}
+                            <img src="/static/images/default_thumbnail.jpg" alt="">
+                        {% endif %}
+                    </div>
+                    <div class="card__text">
+                        <span>{{ post.data.date|readableDate }}</span>
+                        <h2 class="card__title">{{ post.data.title }}</h2>
+                    </div>
                 </a>
             </li>
         {% endfor %}
