@@ -4,7 +4,7 @@ backend:
   branch: main
 
 media_folder: "static/images"
-public_folder: "/images"
+public_folder: "static/images"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
