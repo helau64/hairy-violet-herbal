@@ -36,7 +36,7 @@ permalink: "events/"
 <h2 class="listings__subtitle">Previous Events</h2>
 <ul class="events-list--previous listings__items grid--3-col">
     {% for post in postslist | reverse %}
-        <li data-date="{{post.data.date}}" class="events-list__item--previous listings__item card">
+        <li data-date="{{post.data.start}}" class="events-list__item--previous listings__item card">
             <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
                 <div class="card__image-wrapper">
                     {% if post.data.thumbnail %}

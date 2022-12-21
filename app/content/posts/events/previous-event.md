@@ -1,7 +1,6 @@
 ---
 title: Previous Event
-description: This is an event which has already happened
-date: 2020-09-01
+start: 2020-09-01
 tags:
   - left
   - center

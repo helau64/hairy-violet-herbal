@@ -1,1 +1,32 @@
-layout: default
+---
+layout: layouts/default.njk
+---
+<header class="posts__header max-text-width">
+    {% if thumbnail %}
+        <img src="/static{{thumbnail}}" alt="">
+    {% endif %}
+    <h1 class="posts__title">{{title}}</h1>
+</header>
+
+<div class="posts__sidebar-layout">
+    <aside class="posts__sidebar">
+        <ul>
+            <li>
+                <h2>Location</h2>
+                <p></p>
+            </li>
+            <li>
+                <h2>Date</h2>
+                <p></p>
+            </li>
+            <li>
+                <h2>Time</h2>
+                <p></p>
+            </li>
+        </ul>
+    </aside>
+
+    <article class="prose prose-stone posts__content">
+        {{ content | safe }}
+    </article>
+</div>

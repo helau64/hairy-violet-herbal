@@ -1,7 +1,6 @@
 ---
 title: Upcoming Event
-description: This is an event yet to come
-date: 2026-09-01
+start: 2026-09-01
 tags:
   - left
   - center
