@@ -15,6 +15,8 @@ tags:
 
 ###### This is a Heading h6
 
+![A tabby cat](static/images/img_3e4210cfabe5-1.jpeg)
+
 ## Emphasis
 
 *This text will be italic*\
