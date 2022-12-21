@@ -2,9 +2,9 @@
 title: Hairy Violet Herbal
 permalink: /
 layout: layouts/static.njk
-path: "home"
+path: home
 ---
-![A white woman holding flowers in a garden](/images/screenshot-2022-12-21-at-15.29.01.png)
+![A white woman holding flowers in a garden](static/images/screenshot-2022-12-21-at-15.29.01.png)
 
 ## About me
 
