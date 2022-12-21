@@ -4,7 +4,7 @@ layout: layouts/default.njk
 <div class="max-text-width">
     <header class="posts__header">
         {% if thumbnail %}
-            <img src="/static{{thumbnail}}" alt="">
+            <img src="/{{thumbnail}}" alt="">
         {% endif %}
         <p>{{ date|readableDate }}</p>
         <h1 class="posts__title">{{title}}</h1>

@@ -18,9 +18,9 @@ permalink: "events/"
             <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
                 <div class="card__image-wrapper">
                     {% if post.data.thumbnail %}
-                        <img src="/static{{post.data.thumbnail}}" alt="">
+                        <img src="{{post.data.thumbnail}}" alt="">
                     {% else %}
-                        <img src="/static{{settings.thumbnail}}" alt="">
+                        <img src="{{settings.thumbnail}}" alt="">
                     {% endif %}
                 </div>
                 <div class="card__text">
@@ -39,9 +39,9 @@ permalink: "events/"
             <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
                 <div class="card__image-wrapper">
                     {% if post.data.thumbnail %}
-                        <img src="/static{{post.data.thumbnail}}" alt="">
+                        <img src="{{post.data.thumbnail}}" alt="">
                     {% else %}
-                        <img src="/static/images/default_thumbnail.jpg" alt="">
+                        <img src="{{settings.thumbnail}}" alt="">
                     {% endif %}
                 </div>
                 <div class="card__text">
