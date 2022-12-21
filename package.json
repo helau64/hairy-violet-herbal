@@ -3,9 +3,9 @@
     "dev": "npm-run-all --parallel css js eleventy browsersync",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
-    "js": "esbuild app/assets/js/main.js --bundle --watch --outfile=_site/static/js/main.js",
+    "js": "esbuild app/assets/js/main.js --bundle --watch --minify --outfile=_site/static/js/main.js",
     "css": "node esbuild.config.js --watch",
-    "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production node esbuild.config.js",
+    "build": "cross-env NODE_ENV=production eleventy && node esbuild.config.js && esbuild app/assets/js/main.js --bundle --minify --outfile=_site/static/js/main.js",
     "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open"
   },
   "devDependencies": {
