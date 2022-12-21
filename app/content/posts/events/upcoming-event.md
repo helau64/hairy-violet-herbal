@@ -1,11 +1,15 @@
 ---
-title: Upcoming Event
-description: This is an event yet to come
+start: 2023-06-20T13:00:23.925Z
 date: 2026-09-01
+title: Upcoming Event
+link: Link
+location: Location
+finish: 2023-06-20T15:00:23.933Z
 tags:
   - left
   - center
   - right
+description: This is an event yet to come
 ---
 # This is a Heading h1
 
