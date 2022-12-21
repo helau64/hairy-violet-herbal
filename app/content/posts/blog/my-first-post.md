@@ -9,9 +9,9 @@ tags:
   - center
   - right
 ---
-# This is a Heading h1
-
 ## This is a Heading h2
+
+Here is some regular text
 
 ###### This is a Heading h6
 
