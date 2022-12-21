@@ -2,6 +2,8 @@
 title: Previous Event
 description: This is an event which has already happened
 date: 2020-09-01
+start: 2022-12-01T13:00:14.004Z
+finish: 2022-12-01T16:00:14.010Z
 tags:
   - left
   - center
