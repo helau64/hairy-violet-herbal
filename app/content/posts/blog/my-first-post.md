@@ -3,7 +3,7 @@ title: This is my first post
 description: And this is its blurb!
 author: Surjith S M
 date: 2022-12-20T15:40:01.459Z
-thumbnail: /images/img_3e4210cfabe5-1.jpeg
+thumbnail: static/images/t.png
 tags:
   - left
   - center
@@ -15,7 +15,7 @@ Here is some regular text
 
 ###### This is a Heading h6
 
-![A tabby cat](static/images/img_3e4210cfabe5-1.jpeg)
+![A tabby cat](static/images/img_3e4210cfabe5-1.jpg)
 
 ## Emphasis
 
