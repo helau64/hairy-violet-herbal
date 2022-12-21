@@ -1,7 +1,6 @@
 ---
 start: 2023-06-20T13:00:23.925Z
 title: Upcoming Event
-link: Link
 location: Location
 finish: 2023-06-20T15:00:23.933Z
 tags:

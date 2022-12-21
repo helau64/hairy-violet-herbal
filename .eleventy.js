@@ -21,6 +21,12 @@ module.exports = function (eleventyConfig) {
       DateTime.DATETIME_MED
     );
   });
+
+  eleventyConfig.addFilter("readableTime", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toLocaleString(
+      DateTime.TIME_SIMPLE
+    );
+  });
   
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 

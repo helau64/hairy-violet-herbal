@@ -10,19 +10,27 @@ layout: layouts/default.njk
 
 <div class="posts__sidebar-layout">
     <aside class="posts__sidebar">
-        <ul>
-            <li>
-                <h2>Location</h2>
-                <p></p>
+        <ul class="posts__sidebar-items">
+            <li class="posts__sidebar-item">
+                <h2 class="posts__sidebar-title">Date</h2>
+                <p>{{start|readableDate}}</p>
             </li>
-            <li>
-                <h2>Date</h2>
-                <p></p>
+            <li class="posts__sidebar-item">
+                <h2 class="posts__sidebar-title">Time</h2>
+                <p>{{start|readableTime}} {% if finish %}- {{finish|readableTime}}{% endif %}</p>
             </li>
-            <li>
-                <h2>Time</h2>
-                <p></p>
-            </li>
+            {% if location %}
+                <li class="posts__sidebar-item">
+                    <h2 class="posts__sidebar-title">Location</h2>
+                    <p>{{location}}</p>
+                </li>
+            {% endif %}
+            {% if link %}
+                <li class="posts__sidebar-item">
+                    <h2 class="posts__sidebar-title">Link</h2>
+                    <a href="{{link.url}}">{{link.text}}</a>
+                </li>
+            {% endif %}
         </ul>
     </aside>
 
