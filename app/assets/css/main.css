@@ -44,6 +44,7 @@
 
 @import "pages/listings";
 @import "pages/posts";
+@import "pages/content";
 
 /*------------------------------------*\
   #TAILWIND-IMPORTS

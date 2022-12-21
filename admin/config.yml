@@ -10,7 +10,16 @@ public_folder: "/images"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: home
+        file: "app/content/pages/static/home.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Blog Posts"
     name: "blog"
     folder: "app/content/posts/blog"
     create: true
