@@ -9,3 +9,17 @@
         @apply hidden;
     }
 }
+
+.no-js-only {
+    @apply hidden;
+}
+
+.no-js {
+    .no-js-only {
+        @apply block;
+    }
+
+    .js-only {
+        @apply hidden;
+    }
+}

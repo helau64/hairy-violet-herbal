@@ -11,11 +11,10 @@ permalink: "events/"
 </header>
 
 {% set postslist = collections.events %}
-
-<h2 class="listings__subtitle">Upcoming Events</h2>
+<h2 class="listings__subtitle js-only">Upcoming Events</h2>
 <ul class="events-list--upcoming listings__items grid--3-col">
     {% for post in postslist | reverse %}
-        <li data-date="{{post.data.date}}" class="events-list__item--upcoming listings__item card">
+        <li data-date="{{post.data.start}}" class="events-list__item--upcoming listings__item card">
             <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
                 <div class="card__image-wrapper">
                     {% if post.data.thumbnail %}
@@ -25,7 +24,7 @@ permalink: "events/"
                     {% endif %}
                 </div>
                 <div class="card__text">
-                    <span>{{ post.data.date|readableDateTime }}</span>
+                    <span>{{ post.data.start|readableDateTime }}</span>
                     <h3 class="card__title">{{ post.data.title }}</h3>
                 </div>
             </a>
@@ -33,8 +32,8 @@ permalink: "events/"
     {% endfor %}
 </ul>
 
-<h2 class="listings__subtitle">Previous Events</h2>
-<ul class="events-list--previous listings__items grid--3-col">
+<h2 class="listings__subtitle js-only">Previous Events</h2>
+<ul class="events-list--previous listings__items grid--3-col js-only">
     {% for post in postslist | reverse %}
         <li data-date="{{post.data.start}}" class="events-list__item--previous listings__item card">
             <a href="{{ post.url | url }}" aria-label="{{ post.data.title }}">
@@ -46,7 +45,7 @@ permalink: "events/"
                     {% endif %}
                 </div>
                 <div class="card__text">
-                    <span>{{ post.data.date|readableDateTime }}</span>
+                    <span>{{ post.data.start|readableDateTime }}</span>
                     <h3 class="card__title">{{ post.data.title }}</h3>
                 </div>
             </a>
