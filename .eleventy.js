@@ -48,8 +48,8 @@ module.exports = function (eleventyConfig) {
 
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy("admin/config.yml");
+  eleventyConfig.addPassthroughCopy("admin/index.html");
 
-  // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy("./static/images");
 
   // Copy favicon to route of /_site

@@ -1,12 +1,7 @@
 ---
 title: This is my first post
 description: And this is its blurb!
-date: 2022-12-20T15:40:01.459Z
 thumbnail: static/images/t-full.jpg
-tags:
-  - left
-  - center
-  - right
 ---
 ## This is a Heading h2
 

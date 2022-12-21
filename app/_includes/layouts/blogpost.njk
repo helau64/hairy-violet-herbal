@@ -6,7 +6,7 @@ layout: layouts/default.njk
         {% if thumbnail %}
             <img src="/{{thumbnail}}" alt="">
         {% endif %}
-        <p>{{ date|readableDate }}</p>
+        <p>{{ page.date|readableDate }}</p>
         <h1 class="posts__title">{{title}}</h1>
         {% if description %}
             <p class="posts__blurb">{{description}}</p>
