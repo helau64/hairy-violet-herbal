@@ -32,7 +32,7 @@
 \*------------------------------------*/
 
  @layer utilities {
-    .w-contained {
+    .contained-width {
         @apply mx-auto;
 
         max-width: $max-width;
@@ -49,8 +49,4 @@
             padding-right: rem(140px);
         }
     }
- }
-
-.contained-width {
-    @apply w-contained;
 }

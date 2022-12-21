@@ -1,6 +1,11 @@
 module.exports = {
   content: ["./**/*.njk"],
   theme: {
+    extend: {
+      spacing: {
+        30: '7.5rem'
+      }
+    },
     screens: {
       xxs: '350px',
       xs: '580px',

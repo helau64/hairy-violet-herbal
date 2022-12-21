@@ -1,0 +1,31 @@
+.posts__header {
+    @apply my-8;
+
+    img {
+        @apply h-40;
+        @apply w-full;
+        @apply object-cover;
+        @apply mb-2;
+    }
+}
+
+.posts__title {
+    @apply mt-3;
+}
+
+.posts__blurb {
+    @apply text-lg;
+    @apply mt-4;
+}
+
+@include min-width(sm) {
+    .posts__header {
+        img {
+            @apply h-60;
+        }
+    }
+
+    .posts__title {
+        @apply text-5xl;
+    }
+}

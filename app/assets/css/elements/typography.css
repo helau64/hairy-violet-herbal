@@ -7,6 +7,7 @@ body {
 
 h1 {
     @apply text-6xl;
+    @apply font-bold;
 }
 
 @include max-width(sm) {

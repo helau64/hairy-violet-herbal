@@ -7,7 +7,7 @@
 
     img {
         @apply transition-transform duration-150;
-        @apply h-40 w-full;
+        @apply h-30 w-full;
         @apply object-cover;
     }
 
@@ -41,7 +41,7 @@
 @include min-width(lg) {
     .card {
         img {
-            @apply h-60;
+            @apply h-40;
         }
     }
 }

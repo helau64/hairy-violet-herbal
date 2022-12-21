@@ -26,3 +26,7 @@ body {
 .max-width {
     max-width: $max-width;
 }
+
+.max-text-width {
+    max-width: $max-text-width;
+}
