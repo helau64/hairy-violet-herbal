@@ -28,6 +28,7 @@
 
     .navigation__item {
         @apply mb-2;
+        @apply text-lg;
     }
 
     .navigation__toggle[aria-expanded="true"] {
