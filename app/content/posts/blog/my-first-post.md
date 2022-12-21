@@ -15,7 +15,7 @@ Here is some regular text
 
 ###### This is a Heading h6
 
-![A tabby cat](static/images/t-full.jpg)
+![A tabby cat](/static/images/t-full.jpg)
 
 ## Emphasis
 
