@@ -21,6 +21,22 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - label: "About"
+        name: about
+        file: "app/content/pages/static/about.md"
+        editor:
+          preview: false
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Contact"
+        name: contact
+        file: "app/content/pages/static/contact.md"
+        editor:
+          preview: false
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
   - label: "Blog Posts"
     name: "blog"
     folder: "app/content/posts/blog"
