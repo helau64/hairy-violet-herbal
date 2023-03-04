@@ -1,6 +1,31 @@
+form {
+    @apply my-8;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-    @apply p-2;
+    @apply p-2 mb-4;
+    @apply w-full;
+    @apply border border-stone-600;
+}
+
+label {
+    @apply block;
+    @apply uppercase;
+    @apply mb-1;
+    @apply text-sm;
+}
+
+button {
+    @apply mt-4 py-1 px-6;
+    @apply uppercase tracking-wide;
+    @apply text-white;
+    @apply bg-slate-700 !important;
+    @apply border-2 border-slate-700;
+
+    &:hover, &:focus, &:active {
+        @apply bg-white text-slate-700 !important;
+    }
 }
